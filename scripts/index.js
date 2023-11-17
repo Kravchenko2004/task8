@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
+    const buttonFormDiv = document.getElementById('btn-open-div')
     const buttonForm = document.getElementById('btn-open-form');
     const popUp = document.getElementById('pop-up');
     const form = document.getElementById('main-form');
@@ -37,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     buttonForm.addEventListener('click', () => {
         popUp.style.display = 'flex';
-        buttonForm.style.display = 'none';
+        buttonFormDiv.style.display = 'none';
         history.pushState(
             {form: 'form'},
             'form',
@@ -48,7 +49,7 @@ window.addEventListener("DOMContentLoaded", () => {
     popUp.addEventListener('click', () => {
         history.back();
         popUp.style.display = 'none';
-        buttonForm.style.display = 'flex';
+        buttonFormDiv.style.display = 'flex';
     });
 
     form.addEventListener('click', (e) => {
@@ -72,7 +73,7 @@ window.addEventListener("DOMContentLoaded", () => {
         
         history.back();
         popUp.style.display = 'none';
-        buttonForm.style.display = 'flex';
+        buttonFormDiv.style.display = 'flex';
 
         const user = {
             name: name.value,
