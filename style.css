@@ -28,6 +28,10 @@ body {
     background-color: rgba(20, 20, 20, 0.9);
 }
 
+#pop-up {
+    display: none;
+}
+
 .my-text-color {
     color: hsla(0,0%,100%,.6);
 }
