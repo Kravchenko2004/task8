@@ -24,10 +24,8 @@ body {
     background-color: #141414;
 }
 
-#pop-up {
+#main-form {
     background-color: rgba(20, 20, 20, 0.9);
-
-    display: none;
 }
 
 .my-text-color {
